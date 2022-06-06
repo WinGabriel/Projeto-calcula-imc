@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e1212;
+    width: 100%;
+    height: 100vh;
+    margin-inline: auto;
+}
+
+.wrapper {
+    width: 37.5rem;
+    padding-inline: auto;
+    margin-inline: auto;
+}
+
+.circle{
+    
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.20);
+    background-color: #2a1df1;
+    opacity: .9;
+    margin-left: 210px;
+    transform: translateY(-280px);
+}
+
+.circle2 {
+    width: 10rem ;
+    height: 10rem;
+    position: absolute;
+    background-color: #2a1df1;
+    opacity: .9;
+    z-index: -2;
+    border-radius: 50%;
+    margin-left: -270px;
+    transform: translateY(230px);
+}
+
+.container {
+    width: 100%;
+    padding-block: 2rem;
+    border: 1px solid;
+    margin-inline: auto;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding-bottom: 6rem;
+}
+
+
+
+.container .logo h1 {
+    color: #675ef9;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+hr {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerIn {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.containerIn .containerIMC
+ h3 {
+    color: white;
+    margin-bottom: 1rem;
+ }
+
+.containerIn .containerIMC p {
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.containerIn .containerResult h3{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.containerIn .containerResult p {
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.calculaImc {
+    display: flex;
+    flex-direction: column;
+    gap:.3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculaImc input {
+    padding: 1rem 2rem;
+    max-width: 35rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.buttonCalcula {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonCalcula #btnCalcular{
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    border-radius: 1.3rem;
+    border: none;
+    width: 15rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 10px 0.5px #0e1212;
+    background: rgb(103, 94, 249);
+    background: -webkit-linear-gradient(112deg, rgba(103,94,249,1) 0%, rgba(103,94,249,1) 16%, rgba(42,29,241,1) 63%);
+    margin-left: 1rem;
+}
+
+.buttonCalcula #btnlimpar {
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    border-radius: 1.3rem;
+    border: none;
+    width: 15rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 10px 0.5px #0e1212;
+    background-color: #f96e5e;
+    margin-left: 1rem;
+}
+
+.resposta{
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    position:relative;
+}
